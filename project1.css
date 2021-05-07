@@ -1,0 +1,127 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 20px;
+    overflow-x: hidden;
+    color: cornsilk;
+    font-family: 'Flamenco', cursive;
+}
+header{
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('./websiteimages/coffee\ image.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 1200px;
+    width: 100%;
+}
+
+.clearfix::after{
+    content: '.';
+    visibility: hidden;
+    display: block;
+    height: 0px;
+    clear: both;
+}
+
+.row{
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.logo{
+    height: 120px;
+    width: auto;
+    float: left;
+    margin-top: 30px;
+}
+
+.main-nav{
+    float: right;
+    margin-top: 70px;
+}
+
+.main-nav li{
+    display: inline-block;
+    list-style: none;
+    margin-right: 40px;
+}
+
+.main-nav li a{
+    padding: 5px 0;
+    color: rgb(255, 252, 242);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    font-weight: 100;
+}
+
+.main-nav li a:hover{
+    border-bottom: 2px solid #be9a6b;
+}
+
+.main-content-header{
+    width: 1300px;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);    
+}
+
+h1{
+    color: cornsilk;
+    font-size: 220%;
+    word-spacing: 5px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+
+.coffee{
+    text-transform: lowercase;
+}
+
+.btm{
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: lighter;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 200px;
+    margin-top: 30px;
+    transition: back-ground 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-full{
+    background-color: transparent;
+    color: #d4c1aa;
+    margin-right: 25px;
+    border: 1px solid #c0af9c;
+    font-weight: bold;
+}
+
+.btn-full:hover{
+    background-color: rgb(255, 255, 255);
+}
+
+.btn-half{
+    background-color: transparent;
+    color: rgb(185, 178, 168);
+    margin-right: 25px;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.btn-half:hover{
+    background-color: #4b371e;
+}
+
+.color-change{
+    animation: change-color 1s infinite;
+}
+
+@keyframes change-color{
+    50%{color: #795333;}
+    100%{color: cornsilk;}
+}
